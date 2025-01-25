@@ -3,7 +3,7 @@ const input = document.getElementById("cityinput")
 const country = document.getElementById("country")
 const localtime = document.getElementById("localtime")
 const temp = document.getElementById("temp")
-const apiKey = process.env.API_KEY;
+const apiKey = "ec5b58a0f5b045d1b7e123216250601";
 const getdata = async() =>{
     let url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${input.value}&aqi=yes`
     let data = await fetch(url)
